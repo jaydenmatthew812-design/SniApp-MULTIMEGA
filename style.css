@@ -1,0 +1,36 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(120deg, #004d40, #00acc1);
+  color: white;
+  text-align: center;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+#app {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+button {
+  background: #00e5ff;
+  border: none;
+  color: black;
+  font-size: 1.2em;
+  padding: 12px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #4dd0e1;
+}
